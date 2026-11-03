@@ -1,0 +1,10 @@
+# dsh-market-radar bundle patch
+#
+# Installed through `dsh plugin --profile <name> add <path>` (or mounted with
+# the matching insert row in the profile patch layer), this file inserts the
+# host half of the plugin. The host half registers the same-origin JSON API;
+# the client half is discovered through package.json#dsh.client and served by
+# dsh-client-modules.
+- insert:
+    - id: market-radar
+      name: 'dsh-market-radar'

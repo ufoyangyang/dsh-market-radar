@@ -77,10 +77,18 @@
 ### 从 GitHub 安装（推荐）
 
 ```bash
+dsh plugin --profile web add github:ufoyangyang/dsh-market-radar
+```
+
+等价的完整地址写法：
+
+```bash
 dsh plugin --profile web add git+https://github.com/ufoyangyang/dsh-market-radar.git
 ```
 
-装完刷新页面即可；若左侧仍未出现，重启 `dsh web`。仓库已带 `dsh-plugin` topic，也会被 [DSH Plugin Hub](https://dsh-plugin.org) 自动收录。
+装完刷新页面即可；若左侧仍未出现，重启 `dsh web`。仓库已带 `dsh-plugin` topic，会被 [DSH Plugin Hub](https://dsh-plugin.org) 自动收录，可在插件详情页复制安装命令。
+
+> DSH 内置「插件中心」只索引 npm 包；当前版本通过 GitHub 源码安装，dsh-plugin.org 收录后可在网页下载。后续发布 npm 包后，安装命令可简化为 `dsh plugin --profile web add dsh-market-radar`。
 
 ### 本地开发挂载
 

@@ -30,6 +30,14 @@
     "stock",
     "market-radar"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ufoyangyang/dsh-market-radar.git"
+  },
+  "homepage": "https://github.com/ufoyangyang/dsh-market-radar#readme",
+  "bugs": {
+    "url": "https://github.com/ufoyangyang/dsh-market-radar/issues"
+  },
   "dsh": {
     "manifestVersion": 1,
     "bundle": {

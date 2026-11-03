@@ -1,5 +1,9 @@
 # 情报雷达 · dsh-market-radar
 
+[![GitHub](https://img.shields.io/badge/GitHub-ufoyangyang%2Fdsh--market--radar-181717?logo=github)](https://github.com/ufoyangyang/dsh-market-radar)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![DSH Plugin](https://img.shields.io/badge/DSH-plugin-0ea5e9)](https://dsh-plugin.org)
+
 一个挂在 DSH 左侧栏的 A 股信息影响分析面板：把**巨潮资讯公告**、**dapan.app 大盘云图**、**东方财富行情/资金流/要闻**拼在一起，回答三个问题：
 
 1. 今天哪些公告/政策最重要，它们对应公司股价实际怎么走？
@@ -70,7 +74,15 @@
 
 ## 安装
 
-插件已经装进 `web` profile。重装或迁移时：
+### 从 GitHub 安装（推荐）
+
+```bash
+dsh plugin --profile web add git+https://github.com/ufoyangyang/dsh-market-radar.git
+```
+
+装完刷新页面即可；若左侧仍未出现，重启 `dsh web`。仓库已带 `dsh-plugin` topic，也会被 [DSH Plugin Hub](https://dsh-plugin.org) 自动收录。
+
+### 本地开发挂载
 
 ```bat
 mklink /J "%USERPROFILE%\.dsh\profiles\web\node_modules\dsh-market-radar" "D:\codex_workspace\investigate_info\dsh-market-radar"

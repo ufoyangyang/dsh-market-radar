@@ -1,7 +1,7 @@
 {
   "name": "dsh-market-radar",
-  "version": "0.1.0",
-  "description": "DSH 情报雷达：巨潮公告 × A股大盘 × 资金与情绪，分析信息对上市公司股价的影响",
+  "version": "0.2.0",
+  "description": "DSH 情报雷达：巨潮公告 × A股大盘 × 资金与情绪，并按目的快速读懂一家公司",
   "license": "MIT",
   "author": "dsh-market-radar contributors",
   "type": "module",
@@ -28,7 +28,8 @@
     "a-share",
     "cninfo",
     "stock",
-    "market-radar"
+    "market-radar",
+    "company-research"
   ],
   "repository": {
     "type": "git",
